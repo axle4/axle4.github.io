@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Axel44 Agency</title>
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>💼 Axel44</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#dashboard" class="nav-item active">📊 Dashboard</a>
+                <a href="#analytics" class="nav-item">📈 Analytics</a>
+                <a href="#ebooks" class="nav-item">📚 E-Books</a>
+                <a href="#services" class="nav-item">🎯 Services</a>
+                <a href="#profile" class="nav-item">👤 Profile</a>
+            </nav>
+            <button id="logoutBtn" class="btn-logout">🚪 Logout</button>
+        </aside>
+
+        <!-- Main Dashboard Content -->
+        <main class="dashboard-content">
+            <!-- Header -->
+            <header class="dashboard-header">
+                <h1 id="welcomeMessage">Welcome, alx!</h1>
+                <div class="header-right">
+                    <div class="datetime-display">
+                        <div id="currentDate">Loading date...</div>
+                        <div id="currentTime">Loading time...</div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Grid -->
+            <div class="dashboard-grid">
+                <!-- Welcome Card -->
+                <div class="dashboard-card welcome-card">
+                    <div class="card-header">
+                        <h2>Welcome Back</h2>
+                    </div>
+                    <div class="card-content">
+                        <p>You have successfully logged into the Axel44 Agency Admin Dashboard.</p>
+                        <p>Monitor your business metrics, manage your services, and track your e-book sales from this central hub.</p>
+                    </div>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="dashboard-card stat-card">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-content">
+                        <h3>Active E-Books</h3>
+                        <p class="stat-number">6</p>
+                    </div>
+                </div>
+
+                <div class="dashboard-card stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-content">
+                        <h3>Services Offered</h3>
+                        <p class="stat-number">6</p>
+                    </div>
+                </div>
+
+                <div class="dashboard-card stat-card">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-content">
+                        <h3>Total Revenue</h3>
+                        <p class="stat-number">$12.5K</p>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="dashboard-card quick-actions">
+                    <h3>Quick Actions</h3>
+                    <div class="action-buttons">
+                        <button class="action-btn">Add New E-Book</button>
+                        <button class="action-btn">View Analytics</button>
+                        <button class="action-btn">Manage Services</button>
+                        <button class="action-btn">View Orders</button>
+                    </div>
+                </div>
+
+                <!-- Activity Feed -->
+                <div class="dashboard-card activity">
+                    <h3>Recent Activity</h3>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <span class="activity-time">Today</span>
+                            <p>3 new e-book purchases</p>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-time">Today</span>
+                            <p>Updated social media strategy</p>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-time">Yesterday</span>
+                            <p>Published new blog post</p>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-time">2 days ago</span>
+                            <p>Completed client project</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Overview -->
+                <div class="dashboard-card services-overview">
+                    <h3>Services Overview</h3>
+                    <div class="services-list">
+                        <div class="service-item">
+                            <span>💻 Web Development</span>
+                            <span class="badge">Active</span>
+                        </div>
+                        <div class="service-item">
+                            <span>📱 Social Media</span>
+                            <span class="badge">Active</span>
+                        </div>
+                        <div class="service-item">
+                            <span>₿ Crypto Trading</span>
+                            <span class="badge">Active</span>
+                        </div>
+                        <div class="service-item">
+                            <span>📊 Marketing</span>
+                            <span class="badge">Active</span>
+                        </div>
+                        <div class="service-item">
+                            <span>🤖 Prompt Engineering</span>
+                            <span class="badge">Active</span>
+                        </div>
+                        <div class="service-item">
+                            <span>📚 E-Books</span>
+                            <span class="badge">Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

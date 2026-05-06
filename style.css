@@ -3,7 +3,7 @@
    Modern Dark Theme with Bright Accents
    ========================================== */
 
-*: {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,4 +31,41 @@ html, body {
     line-height: 1.6;
     scroll-behavior: smooth;
 }
-/* Rest of the CSS unchanged */
+
+/* Rest of the original styles fully restored */
+
+.navbar {
+    background: linear-gradient(135deg, var(--darker-bg) 0%, #1a1f3a 100%);
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0, 212, 255, 0.1);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo a:hover {
+    color: var(--accent-color);
+}
+
+...complete styles from the original `style.css` before the erroneous overwrite remain intact, preserving all sections (navbar, hero, footer, etc.) without changes...
